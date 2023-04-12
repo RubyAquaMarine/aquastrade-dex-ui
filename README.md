@@ -23,3 +23,5 @@ More: https://github.com/paulrberg/create-eth-app
 - yarn install
 - update the configuration in ./packages/react-app/src/config.js
 - yarn run react-app:start
+### UI 
+<img width="509" alt="Screenshot 2023-04-12 at 9 18 17 PM" src="https://user-images.githubusercontent.com/86425604/231486626-fa0551ab-b53f-42e7-a6cc-e958503750e2.png">
