@@ -19,13 +19,6 @@ Run: yarn create eth-app my-eth-app --template uniswap-v2
 More: https://github.com/paulrberg/create-eth-app
 
 ## How to start
-
 - yarn install
 - update the configuration in ./packages/react-app/src/config.js
 - yarn run react-app:start
-### UI
-<img width="509" alt="Screenshot 2023-04-12 at 9 18 17 PM" src="https://user-images.githubusercontent.com/86425604/231487495-ef777352-896a-464c-8723-f69fc727f090.png">
-
-### Ruby.Exchange 
-- pull `europa` branch : https://github.com/RubyAquaMarine/uniswap-clone-ui/tree/europa
-- RPC, Explorer: https://mainnet.skalenodes.com/#/chains/elated-tan-skat

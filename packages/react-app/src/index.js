@@ -1,7 +1,7 @@
 import "./index.css";
 
-import {DAppProvider} from "@usedapp/core";
-import {DAPP_CONFIG} from "./config";
+import { DAppProvider } from "@usedapp/core";
+import { DAPP_CONFIG } from "./config";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -18,9 +18,12 @@ ReactDOM.render(
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <div>
+      <p>NFT POWERED AMM </p>
+    </div>
     <ErrorBoundary>
       <DAppProvider config={DAPP_CONFIG}>
-          <App/>
+        <App />
       </DAppProvider>
     </ErrorBoundary>
   </React.StrictMode>,
