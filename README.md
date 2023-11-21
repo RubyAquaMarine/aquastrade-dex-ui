@@ -9,8 +9,8 @@ This template contains 2 packages:
 ## How to start
 - nvm use v16.19.0
 - yarn install
-- update the configuration in ./packages/react-app/src/config.js
 - yarn run react-app:start
 
 ## UI
-![Screenshot 2023-11-21 at 3 24 17 PM](https://github.com/RubyAquaMarine/aquastrade-dex-ui/assets/86425604/64bf82e3-b8f9-4bed-a1d3-699d9a9bdd5d)
+
+![Screenshot 2023-11-21 at 3 29 35 PM](https://github.com/RubyAquaMarine/aquastrade-dex-ui/assets/86425604/a6f2ca6d-8f87-45d2-b29d-f395de981e53)
