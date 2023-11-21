@@ -19,6 +19,7 @@ Run: yarn create eth-app my-eth-app --template uniswap-v2
 More: https://github.com/paulrberg/create-eth-app
 
 ## How to start
+- nvm use v16.19.0
 - yarn install
 - update the configuration in ./packages/react-app/src/config.js
 - yarn run react-app:start
