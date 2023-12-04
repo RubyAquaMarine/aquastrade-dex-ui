@@ -1,9 +1,4 @@
-import {Localhost, Mainnet, DEFAULT_SUPPORTED_CHAINS} from "@usedapp/core";
-
-/*** UNCOMMENT THE LINES BELOW TO RUN WITH TEST POOL AND ROUTER DATA ***/
-// import {TEST_DATA_GOERLI} from "./tests/testDataGoerli";
- //export const ROUTER_ADDRESS = TEST_DATA_GOERLI.router
- //export const POOLS = TEST_DATA_GOERLI.pools;
+import {DEFAULT_SUPPORTED_CHAINS} from "@usedapp/core";
 
 /*** UNCOMMENT THE LINES BELOW TO RUN WITH YOUR OWN ROUTER ***/
 export const ROUTER_ADDRESS = '0x698EA133CBA3BACD4aA6405411d8e8c1726D5f61'

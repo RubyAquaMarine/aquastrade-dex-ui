@@ -116,7 +116,7 @@ export function Exchange(props) {
   const approvedNeeded = fromValueBigNumber.gt(tokenAllowance) ;
 
   
-  const formValueIsGreaterThan0 = fromValueBigNumber.gt(parseUnits("0.00000001"));
+  const formValueIsGreaterThan0 = fromValueBigNumber.gt(parseUnits("0.000000000000000001"));// aqua minimum_volume_size 
 
   const {state: swapApproveState, send: swapApproveSend} = useContractFunction(fromTokenContract, "approve", {
     transactionName: "onApproveRequested",
