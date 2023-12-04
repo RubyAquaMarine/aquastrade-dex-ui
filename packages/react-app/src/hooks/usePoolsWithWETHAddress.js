@@ -25,7 +25,10 @@ export function usePoolsWithWETHAddress(mock) {
   //const [WETHAddress, setWETHAddress] = useState("");
   const [, setError] = useState();
 
-  
+  if(pools){
+    console.log("Pool Data ", pools)
+  }
+ 
 
   useEffect(() => {
     if(mock) {

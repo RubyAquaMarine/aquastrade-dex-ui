@@ -1,5 +1,5 @@
 import "./index.css";
-import { DAppProvider} from "@usedapp/core";
+import { DAppProvider } from "@usedapp/core";
 import { DAPP_CONFIG } from "./config";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -81,7 +81,7 @@ ReactDOM.render(
       <Header />
 
       <main className="main">
-        <div className="rounded filled background centerContent">
+        <div className="rounded filled background centerContent ">
           <ErrorBoundary>
             <App />
           </ErrorBoundary>
@@ -93,3 +93,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+//  <div className="gradient-container"> test</div>
+//  <div className="rounded filled background centerContent ">

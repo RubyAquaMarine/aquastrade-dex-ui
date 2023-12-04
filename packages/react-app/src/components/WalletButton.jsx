@@ -21,7 +21,10 @@ export function WalletButton() {
   }, [account, setRendered]); //ens
 
   return (
-    <Button
+    <Button 
+    style={{
+      backgroundColor: "#231e20",
+    }}
       variant="contained"
       onClick={() => {
         if (!account) {
