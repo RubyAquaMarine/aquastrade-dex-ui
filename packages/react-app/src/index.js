@@ -1,51 +1,12 @@
 import "./index.css";
-import { ethers } from "ethers";
-import { DAppProvider, useEthers } from "@usedapp/core";
+import { DAppProvider} from "@usedapp/core";
 import { DAPP_CONFIG } from "./config";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./components/App";
 import ErrorBoundary from "./components/ErrorBoundary";
 
-function HeadThor() {
-  const { activateBrowserWallet, chainId, account } = useEthers();
-  const [networkError, setNetworkError] = useState(false);
-
-  console.error("Chain id ", chainId);
-
-  useEffect(() => {
-    if (chainId && chainId !== 1) {
-      setNetworkError(true);
-    } else {
-      setNetworkError(false);
-    }
-  }, [chainId]);
-
-  const switchToMainnet = async () => {
-    try {
-      await activateBrowserWallet(ethers.providers.networks.homestead); // Switch to Ethereum Mainnet (Chain ID: 1)
-    } catch (error) {
-      console.error("Error switching network:", error);
-    }
-  };
-
-  return (
-    <div className="header">
-      {networkError && (
-        <div>
-          <p>Please switch to Ethereum Mainnet (Chain ID: 1) to interact with the application.</p>
-          {account ? (
-            <button onClick={switchToMainnet}>Switch Network</button>
-          ) : (
-            <button onClick={() => activateBrowserWallet()}>Connect Wallet</button>
-          )}
-        </div>
-      )}
-      {/* ... rest of your header components ... */}
-    </div>
-  );
-}
 function Header() {
   return (
     <div className="header">
@@ -117,7 +78,6 @@ ReactDOM.render(
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <DAppProvider config={DAPP_CONFIG}>
-    
       <Header />
 
       <main className="main">

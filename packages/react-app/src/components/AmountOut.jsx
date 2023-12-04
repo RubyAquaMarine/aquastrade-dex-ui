@@ -1,7 +1,7 @@
 import { Input } from "@mui/material";
 import { Contract } from "@ethersproject/contracts";
 import { ethers } from "ethers";
-import { formatUnits, parseUnits } from "ethers/lib/utils";
+import { parseUnits } from "ethers/lib/utils";
 import { useCall, ERC20 } from "@usedapp/core";
 import React from "react";
 import { useAmountsOut } from "../hooks/useAmountsOut";
