@@ -14,3 +14,4 @@ This template contains 2 packages:
 ## UI
 
 ![Screenshot 2023-11-21 at 3 29 35 PM](https://github.com/RubyAquaMarine/aquastrade-dex-ui/assets/86425604/a6f2ca6d-8f87-45d2-b29d-f395de981e53)
+

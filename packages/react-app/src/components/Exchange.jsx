@@ -85,19 +85,14 @@ export function Exchange(props) {
 
   const initialFromToken = pools[0].token0Address;
   const initialToToken = pools[0].token1Address;
-
-  
-
-
-  const [fromValue, setFromValue] = useState("0");// aqua default swap size 
+  const [fromValue, setFromValue] = useState("0.1");// aqua default_swap_size 
 
 
   const [fromToken, setFromToken] = useState(initialFromToken);
   const [toToken, setToToken] = useState(initialToToken);
 
   const fromValueBigNumber = parseUnits(fromValue || "0");
-  console.log("Exchange: fromValue", fromValueBigNumber, " amount to be approved", fromValue )
-
+  
 
   const availableTokens = getAvailableTokens(pools);
   console.log("Exchange: availableTokens", availableTokens)
@@ -116,7 +111,7 @@ export function Exchange(props) {
   const approvedNeeded = fromValueBigNumber.gt(tokenAllowance) ;
 
   
-  const formValueIsGreaterThan0 = fromValueBigNumber.gt(parseUnits("0.00000001"));
+  const formValueIsGreaterThan0 = fromValueBigNumber.gt(parseUnits("0.000000000000000001"));// aqua minimum_volume_size 
 
   const {state: swapApproveState, send: swapApproveSend} = useContractFunction(fromTokenContract, "approve", {
     transactionName: "onApproveRequested",

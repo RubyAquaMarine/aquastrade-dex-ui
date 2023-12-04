@@ -1,7 +1,12 @@
-body {
+/* Reset default margin and padding */
+body, h1, p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,21 +15,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* Header styles */
+.header {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+}
+
+.header-item {
+  margin-right: 20px;
+}
+
+/* Main content styles */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); /* Adjust to your layout */
+}
+
 .rounded {
   border-radius: 24px;
   padding: 24px;
 }
 
-
 .filled.background {
   background-color: rgba(36, 218, 218, 0.1);
 }
 
-.filled.group {
-  background-color: rgba(0, 212, 255, 0.25);
-}
-
 .centerContent {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b1a1a; /* Change to your preferred color */
+  color: #fff; /* Change to your preferred color */
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-list a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 6px; /* Adjust vertical spacing between links */
+}
