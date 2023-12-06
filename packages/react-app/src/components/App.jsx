@@ -12,7 +12,7 @@ function App() {
   const { account, error, chainId, switchNetwork } = useEthers();
   const [poolsLoading, pools] = usePoolsWithWETHAddress(POOLS);
   if (error) {
-    console.error("Ethers Failed to Load");
+    console.error("Ethers Failed to Load using chainId ", chainId);
     throw error;
   }
 
@@ -29,14 +29,14 @@ function App() {
       </>
     );
   } else if (config?.readOnlyUrls[chainId]) {
-    console.error("Connected to Skale: EuropaHub", chainId);
+   
     return (
       <>
-        <div style={{ padding: "10px" }}>
+        <div  style={{ padding: "10px" }}>
           <Stack justifyContent="center" direction="column" style={{ marginBottom: "30px" }}>
             <WalletButton />
           </Stack>
-          <Container maxWidth="md">
+          <Container maxWidth="md" >
             {account ? (
               poolsLoading ? (
                 <Alert severity="info">Loading pools, please wait!</Alert>
@@ -56,3 +56,9 @@ function App() {
   }
 }
 export default App;
+
+/*
+style={{
+  backgroundColor: "#231e20",
+}}
+*/

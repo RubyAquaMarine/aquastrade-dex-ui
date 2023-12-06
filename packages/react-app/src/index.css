@@ -2,6 +2,7 @@
 body, h1, p {
   margin: 0;
   padding: 0;
+
 }
 
 /* Global styles */
@@ -9,6 +10,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+  
 }
 
 code {
@@ -17,7 +20,7 @@ code {
 
 /* Header styles */
 .header {
-  background-color: #1f1f1f;
+  background-color: #231e20;
   color: #fff;
   padding: 10px 20px;
   font-size: 14px;
@@ -43,6 +46,7 @@ code {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 150px); /* Adjust to your layout */
+  
 }
 
 .rounded {
@@ -66,7 +70,7 @@ code {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #1b1a1a; /* Change to your preferred color */
+  background-color: #231e20; /* Change to your preferred color */
   color: #fff; /* Change to your preferred color */
   text-align: center;
   padding: 20px;
@@ -103,4 +107,8 @@ code {
   color: #fff;
   text-decoration: none;
   margin-bottom: 6px; /* Adjust vertical spacing between links */
+}
+
+.gradient-container {
+  background: radial-gradient(circle at center, #ffff, #231e20 80%); /* Replace colors as needed */
 }

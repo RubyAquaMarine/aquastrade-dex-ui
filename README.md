@@ -7,9 +7,14 @@ This template contains 2 packages:
 - [react-app](/packages/react-app)
 
 ## How to start
+```bash
+nvm use v16.19.0
+yarn install
+yarn dev
+```
 - nvm use v16.19.0
 - yarn install
-- yarn run react-app:start
+- yarn dev
 
 ## UI
 

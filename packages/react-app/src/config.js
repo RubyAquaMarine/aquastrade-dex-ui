@@ -1,13 +1,11 @@
 import { DEFAULT_SUPPORTED_CHAINS, Mainnet } from "@usedapp/core";
 import { getDefaultProvider } from "ethers";
 import * as dotenv from "dotenv";
+import { AQUA_DATA_EUROPA } from "./pools.js";// aqua: todo
 dotenv.config({ path: ".env" });
-
 export const ROUTER_ADDRESS = "0x698EA133CBA3BACD4aA6405411d8e8c1726D5f61";
-export const POOLS = undefined; // leave undefined to get pools dynamically from the router
-const NODIES_KEY = process.env.NEXT_PUBLIC_NODIES_KEY;
-
-console.log(" api checking ", NODIES_KEY);
+export const POOLS = undefined ; // leave undefined to get pools dynamically from the router : AQUA_DATA_EUROPA.pools
+const NODIES_KEY = process.env.NEXT_PUBLIC_NODIES_KEY;// aqua: todo
 
 const Europa = {
   chainId: 2046399126,
